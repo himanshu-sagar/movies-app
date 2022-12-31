@@ -27,5 +27,5 @@ $ flask db upgrade
 ### Running the application
 
 ```sh
-$ flask run
+$ sh run.sh
 ```

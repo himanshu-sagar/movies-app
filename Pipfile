@@ -12,6 +12,7 @@ flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 python-dotenv = "*"
 elastic-apm = {extras = ["flask"], version = "*"}
+gunicorn = "*"
 
 [dev-packages]
 
