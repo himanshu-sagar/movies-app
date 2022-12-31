@@ -2,7 +2,7 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_script import Manager
 from movies.urls import movie_blueprint
-from movies.models import db
+from helpers.init_apps import db, cache
 from helpers.logger import init_logger
 
 
@@ -11,8 +11,12 @@ def initialize_app():
 
     app.config.from_pyfile('config.py')
 
-    #db = SQLAlchemy(app=app)
+    # init db
     db.init_app(app)
+
+    # init cache
+    cache.init_app(app)
+
     migrate = Migrate(app, db)
     manager = Manager(app)
 

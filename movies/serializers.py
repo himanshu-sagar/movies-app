@@ -5,6 +5,7 @@ from marshmallow import fields, validate
 
 class MovieSerializer(ma.Schema):
     """Serialize the data"""
+    movie_id = fields.Integer(required=True)
     title = fields.Str(required=True, validate=validate.Length(max=100))
     poster_path = fields.Str(required=True, validate=validate.Length(max=250))
     language = fields.Str(required=True, validate=validate.Length(max=20))
