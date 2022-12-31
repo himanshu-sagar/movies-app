@@ -33,7 +33,7 @@ $ sh run.sh
 ```
 
 ### Run application in Docker using Dockerfile and docker-compose.yml
-
+Note: add ```.env_docker``` for this
 ```sh
 $ docker compose build
 $ docker compose up
