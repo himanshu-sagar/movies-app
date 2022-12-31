@@ -11,6 +11,7 @@ flask-script = "==2.0.5"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 python-dotenv = "*"
+elastic-apm = {extras = ["flask"], version = "*"}
 
 [dev-packages]
 
