@@ -11,6 +11,11 @@ flask-script = "==2.0.5"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 python-dotenv = "*"
+elastic-apm = {extras = ["flask"], version = "*"}
+gunicorn = "*"
+psycopg2-binary = "*"
+flask-caching = "*"
+redis = "*"
 
 [dev-packages]
 
