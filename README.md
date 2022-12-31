@@ -38,3 +38,12 @@ Note: add ```.env_docker``` for this
 $ docker compose build
 $ docker compose up
 ```
+
+# Screenshots
+![image](https://user-images.githubusercontent.com/49094337/210155651-8fcd3bae-2c6b-4409-ac62-d444ccc74eb5.png)
+
+![image](https://user-images.githubusercontent.com/49094337/210155626-dc0f4f84-2e5d-4f45-9cbb-6e2f8ce33434.png)
+
+![image](https://user-images.githubusercontent.com/49094337/210155661-3e9da15e-8932-4318-b024-d9cb94c98185.png)
+
+![image](https://user-images.githubusercontent.com/49094337/210155670-dc0d87c9-ba93-4211-9363-b22160a10a06.png)
