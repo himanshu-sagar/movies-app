@@ -4,7 +4,7 @@ from flask_script import Manager
 from movies.urls import movie_blueprint
 import os
 from movies.models import db
-from logger import init_logger
+from helpers.logger import init_logger
 
 app = Flask(__name__)
 
