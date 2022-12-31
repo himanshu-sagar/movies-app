@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  web:
+    build: ./
+    env_file:
+      - .env_docker
+    ports:
+      - "8080:8080"
+    links:
+      - redis
+      - db
+  redis:
+    image: redis:6.0.8
+    ports:
+      - "6379:6379"
+  db:
+    image: postgres:12-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env_docker
+    networks:
+      - default
+    ports:
+      - "5432:5432"
+volumes:
+  postgres_data:

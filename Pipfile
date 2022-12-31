@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-script = "==2.0.5"
+flask-marshmallow = "*"
+marshmallow-sqlalchemy = "*"
+python-dotenv = "*"
+elastic-apm = {extras = ["flask"], version = "*"}
+gunicorn = "*"
+psycopg2-binary = "*"
+flask-caching = "*"
+redis = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
