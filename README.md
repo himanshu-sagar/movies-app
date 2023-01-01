@@ -30,12 +30,14 @@ $ flask db upgrade
 
 ```sh
 $ sh run.sh
+ or
+$ gunicorn -w 1 -b 0.0.0.0:8080 "app:initialize_app()" --timeout 9600 --preload  --access-logfile access.log --error-logfile error.log --log-level 'error'
 ```
 
 ### Run application in Docker using Dockerfile and docker-compose.yml
 Note: add ```.env_docker``` for this
 ```sh
-$ docker compose build
+$ docker pull sagarhimanshu/movies-app-web:latest
 $ docker compose up
 ```
 
